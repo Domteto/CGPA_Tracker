@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/splashbk">
+
+    <ImageView
+        android:id="@+id/splashImageView"
+        android:layout_width="319dp"
+        android:layout_height="397dp"
+        android:layout_gravity="center"
+        android:paddingTop="200dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/meclogow"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <TextView
+        android:id="@+id/splashTextView"
+        android:layout_width="361dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_orange"
+        android:gravity="center"
+        android:text="CGPA Tracker"
+        android:textColor="@color/white"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

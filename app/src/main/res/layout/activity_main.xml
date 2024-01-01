@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainbk"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/gradeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Grade *"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/creditPointsEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Credit Points *"
+        android:layout_below="@+id/gradeEditText"
+        android:layout_marginTop="16dp"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/moduleNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Module Name **"
+        android:layout_below="@+id/creditPointsEditText"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/addModuleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Module *"
+        android:layout_below="@+id/moduleNameEditText"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_orange"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/deleteModuleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Module **"
+        android:layout_below="@+id/addModuleButton"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_blue"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/forecastButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Forecast *"
+        android:layout_below="@+id/deleteModuleButton"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_orange"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/clearForecastButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clear All Forecasts"
+        android:layout_below="@+id/forecastButton"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_blue"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/viewAllModulesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View All Modules"
+        android:layout_below="@+id/clearForecastButton"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_orange"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/cgpaTextView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text=""
+        android:layout_below="@+id/viewAllModulesButton"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:background="@drawable/tvd"
+        />
+
+    <TextView
+        android:id="@+id/totalModulesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text=""
+        android:layout_below="@+id/viewAllModulesButton"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:background="@drawable/tvd"/>
+
+    <TextView
+        android:id="@+id/forecastedModulesTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF0000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_below="@+id/totalModulesTextView"
+        android:layout_marginTop="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    <TextView
+        android:id="@+id/moduledetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        />
+    </ScrollView>
+
+</LinearLayout>
